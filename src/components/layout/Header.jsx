@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <div id="navbar" className={`fixed ${isScrolled && "scrolled"}`}>
             <nav id="navcontain" className="contenedor">
-                <div className="logo">DevFolio</div>
+                <h1 className="logo">Je-HG</h1>
                 <input type="checkbox" id="click" />
                 <label id="btn-menu" htmlFor="click" className="menu-btn">
                     <span class="material-icons">

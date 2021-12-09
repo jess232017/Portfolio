@@ -8,7 +8,7 @@ const Hero = () => {
     useEffect(() => {
         const typed = new Typed(el.current, {
             //Texto a mostrar
-            strings: ["Ingeniero en Computación.", "Desarrollador de Software."],
+            strings: ["Ingeniero en Computación.", "Desarrollador Web.", "Desarrollador de Software."],
             // configuraciones
             loop: true,
             typeSpeed: 80,

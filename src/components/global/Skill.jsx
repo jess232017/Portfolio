@@ -7,20 +7,25 @@ const SkillBox = styled.div`
     flex-direction: column;
     align-items: center;
     box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
-    background-color: var(--color-white);
     padding: 2.5rem 1.3rem;
-    border-radius: 1rem;
+    border-radius: .3rem;
+    //background-color: white;
+    border: 2px dashed #f3f4f6;
+    background-color: white;
+    border-bottom-width: 0.5px;
 `
 
-const Skill = ({ titulo, subtitulo, imagen }) => {
+const Skill = ({ titulo, subtitulo, imagen, url = "#" }) => {
 
     return (
-        <SkillBox classname="margin-mini">
+        <SkillBox>
             <svg className="able-icons">
                 <use xlinkHref={`./img/svg-symbols.svg#${imagen}`} />
             </svg>
-            <a target="_blank" href="{data.url}"><h2 className="title-3">{titulo}</h2></a>
-            <p className="s-description">{subtitulo}</p>
+            <a target="_blank" href={url}>
+                <h2 className="title-3">{titulo}</h2>
+            </a>
+            <p className="description">{subtitulo}</p>
         </SkillBox>
     );
 }

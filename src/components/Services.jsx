@@ -8,12 +8,7 @@ const Services = () => {
 
     useRealTimeDatabase('services', (snapshot) => {
         const data = snapshot.val();
-        setService([]);
-
-        for (const key in data) {
-            setService(oldArray => [...oldArray, { key, item: data[key] }]);
-        }
-        console.log(data, "gol")
+        setService(Object.keys(data).map(key => ({ key, item: data[key] })));
     })
 
     return (

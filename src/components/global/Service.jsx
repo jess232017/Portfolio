@@ -8,7 +8,9 @@ const ServiceBox = styled.div`
     align-items: center;  
     padding: 3rem;
     background-color: var(--color-white);
+    border-radius: .3rem;
     box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    box-shadow: 0 .125rem .25rem rgba(34,34,34,.075);
 `
 
 const Skill = ({ titulo, subtitulo, imagen }) => {
@@ -25,7 +27,7 @@ const Skill = ({ titulo, subtitulo, imagen }) => {
                     </svg>
                 </div>
                 <h4><a href>{titulo}</a></h4>
-                <p>{subtitulo}</p>
+                <p className="description">{subtitulo}</p>
             </div>
         </ServiceBox>
     );

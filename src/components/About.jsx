@@ -1,8 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const AboutMe = styled.div`
+    background-color: #f3f4f6;
+    border-radius: .5rem;
+`;
 
 const About = () => {
     return (
-        <div id="about-me" className="box-shadow">
+        <AboutMe id="about-me" className="box-shadow">
             <div className="about">
                 <div className="profile align-center">
                     <img className="profile-photo" src="img/Jesus Hernandez.png" alt="Jesus Hernández" />
@@ -13,7 +19,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="c-flex justy-between">
-                    <h3 className="title-2">Acerca de mí</h3>
+                    <h3 className="title-2">Sobre Mí</h3>
                     <p className="lead">
                         ¡Hola! Mi nombre es Jesús Hernández desarrollador de software, apasionado por la tecnologia con muchas ganas de seguir aprendiendo.
                     </p>
@@ -30,7 +36,7 @@ const About = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </AboutMe>
 
     );
 }
