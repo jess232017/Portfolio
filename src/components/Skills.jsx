@@ -18,34 +18,37 @@ const Skills = () => {
     })
 
     return (
-        <div id="skill">
-            <h3 className="title-1">Habilidades</h3>
-            <div className="divisor" />
-            <p className="subtitle-1">Conocimientos técnicos y habilidades</p>
+        <section id="skill">
+            <div className='contenedor'>
+                <h3 className="title-1">Habilidades</h3>
+                <div className="divisor" />
 
-            {/*FrontEnd*/}
-            <h5 className="title-2 margin">Front-end</h5>
-            <div id="front-end" className="grid-skills hiper">
-                {frontend.map(({ key, item }) => (
-                    <Skill
-                        key={key}
-                        {...item}
-                    />
-                ))}
-            </div>
+                <p className="subtitle-1">Conocimientos técnicos y habilidades</p>
 
-            {/* Backend*/}
-            <h5 className="title-2 margin">Back-end</h5>
-            <div id="back-end" className="grid-skills hiper">
-                {backend.map(({ key, item }) => (
-                    <Skill
-                        key={key}
-                        {...item}
-                    />
-                ))}
+                {/*FrontEnd*/}
+                <h5 className="title-2 margin">Front-end</h5>
+                <div id="front-end" className="grid-skills hiper">
+                    {frontend.map(({ key, item }) => (
+                        <Skill
+                            key={key}
+                            {...item}
+                        />
+                    ))}
+                </div>
+
+                {/* Backend*/}
+                <h5 className="title-2 margin">Back-end</h5>
+                <div id="back-end" className="grid-skills hiper">
+                    {backend.map(({ key, item }) => (
+                        <Skill
+                            key={key}
+                            {...item}
+                        />
+                    ))}
+                </div>
+                <div className="margin" />
             </div>
-            <div className="margin" />
-        </div>
+        </section>
     );
 }
 

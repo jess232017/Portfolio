@@ -9,18 +9,15 @@ import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Skills from './components/Skills';
 
-import './scss/style.scss';
+import './assets/scss/style.scss';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Hero />
-      <main className="contenedor">
-        <About />
-        <Skills />
-        <Services />
-      </main>
+      <About />
+      <Skills />
       <Hero2 />
       <Portfolio />
       <Contact />

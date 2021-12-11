@@ -1,0 +1,66 @@
+
+.title-1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 2rem auto 3rem auto;
+    color: var(--color-text-primary);
+    &:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        background-color: var(--color-scrolled);
+        width: 100px;
+        bottom: -4px;
+    }
+}
+
+.title-3 {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-1,
+.title-2 {
+    &.margin {
+        margin: 3.5rem auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .title-1 {
+        &.margin {
+            margin: 2rem auto 5rem auto;
+        }
+    }
+    .title-2 {
+        margin: 0 auto;
+    }
+}
+
+.subtitle-1,
+.subtitle-2 {
+    color: #4e4e4e;
+}
+
+.subtitle-1 {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .subtitle-1,
+    .title-2 {
+        &.no-margin {
+            text-align: left;
+        }
+    }
+}

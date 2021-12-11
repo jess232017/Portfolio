@@ -1,43 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const AboutMe = styled.div`
-    background-color: #f3f4f6;
-    border-radius: .5rem;
-`;
 
 const About = () => {
     return (
-        <AboutMe id="about-me" className="box-shadow">
-            <div className="about">
-                <div className="profile align-center">
-                    <img className="profile-photo" src="img/Jesus Hernandez.png" alt="Jesus Hernández" />
-                    <div>
-                        <p><strong>Perfil: </strong><span className="subtitle-1">Desarrollador de Software</span></p>
-                        <p><strong>Email: </strong><span className="subtitle-1">jess232016 @gmail.com</span></p>
-                        <p><strong>Telef: </strong><span className="subtitle-1">86793204</span></p>
+        <section id="about-me">
+            <div className='contenedor'>
+                <h3 className="title-1">Sobre Mí</h3>
+                <div className="divisor"></div>
+                <div className="about-inner">
+                    <div className="profile">
+                        <img className="profile-photo" src="img/Jesus Hernandez.png" alt="Jesus Hernández" />
+                        <div>
+                            <p><b>Perfil:</b> Desarrollador de Software</p>
+                            <p><b>Idiomas:</b> Español (Nativo), Ingles (Basico)</p>
+                        </div>
+                    </div>
+                    <div className='text'>
+                        <p>
+                            ¡Hola! Soy Jesús Hernández, desarrollador de software, y amante de la tecnologia con muchas ganas de seguir aprendiendo sobre ella.
+                        </p>
+                        <p>
+                            Actualmente me encuentro estudiando el quinto año de Ingeniería en Computación, con conocimiento en inglés, desarrollador de aplicaciones móviles, de escritorio y web. Me considero una persona responsable, con iniciativa, puntualidad, compromiso y de rápido aprendizaje.
+                        </p>
+                        <a href="docs/CV - Jesús Hernández.docx" className="btn btn-primary ">
+                            <div className="flex justy-center align-items">
+                                <svg className="mini-icon">
+                                    <use xlinkHref="./img/svg-symbols.svg#icon-download" />
+                                </svg>
+                                <span> Descargar CV</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div className="c-flex justy-between">
-                    <h3 className="title-2">Sobre Mí</h3>
-                    <p className="lead">
-                        ¡Hola! Mi nombre es Jesús Hernández desarrollador de software, apasionado por la tecnologia con muchas ganas de seguir aprendiendo.
-                    </p>
-                    <p className="lead">
-                        Tengo como objetivo consolidar mi carrera profesional en un ambiente que me ofrezca nuevos retos constantemente, retos que podré superar aplicando mis aptitudes, responsabilidad, capacidad de adaptación y motivación por aprender.
-                    </p>
-                    <a href="docs/CV - Jesús Hernández.docx" className="btn btn-primary ">
-                        <div className="flex justy-center align-items">
-                            <svg className="mini-icon">
-                                <use xlinkHref="./img/svg-symbols.svg#icon-download" />
-                            </svg>
-                            <span> Descargar CV</span>
-                        </div>
-                    </a>
-                </div>
             </div>
-        </AboutMe>
-
+        </section>
     );
 }
 
