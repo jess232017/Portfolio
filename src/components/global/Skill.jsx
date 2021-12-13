@@ -7,7 +7,8 @@ const SkillBox = styled.div`
     flex-direction: column;
     align-items: center;
     box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
-    padding: 2.5rem 1.3rem;
+    //padding: 2.5rem 1.3rem;
+    padding: 1.5rem 1.5rem;
     border-radius: .3rem;
     //background-color: white;
     border: 2px dashed #f3f4f6;

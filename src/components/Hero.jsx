@@ -24,7 +24,7 @@ const Hero = () => {
 
     return (
         <header id="inicio" className="hero">
-            <div className="c-flex justy-center align-center" style={{ zIndex: 500, height: '100%' }}>
+            <div className="content">
                 <h1>Jesús Hernández</h1>
                 <div className="flex">
                     <p ref={el} id="dev-text" className="subtitulo" />

@@ -1,4 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
+//lex justy-center align-items
+const Button = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 24px;
+        height: 24px;
+        fill: #4e4e4e;
+    }
+`;
 
 const About = () => {
     return (
@@ -21,14 +33,12 @@ const About = () => {
                         <p>
                             Actualmente me encuentro estudiando el quinto año de Ingeniería en Computación, con conocimiento en inglés, desarrollador de aplicaciones móviles, de escritorio y web. Me considero una persona responsable, con iniciativa, puntualidad, compromiso y de rápido aprendizaje.
                         </p>
-                        <a href="docs/CV - Jesús Hernández.docx" className="btn btn-primary ">
-                            <div className="flex justy-center align-items">
-                                <svg className="mini-icon">
-                                    <use xlinkHref="./img/svg-symbols.svg#icon-download" />
-                                </svg>
-                                <span> Descargar CV</span>
-                            </div>
-                        </a>
+                        <Button href="docs/CV - Jesús Hernández.docx" className="btn btn-primary " >
+                            <svg>
+                                <use xlinkHref="./img/svg-symbols.svg#icon-download" />
+                            </svg>
+                            <span> Descargar CV</span>
+                        </Button>
                     </div>
                 </div>
             </div>

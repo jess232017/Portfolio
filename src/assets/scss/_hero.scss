@@ -18,7 +18,7 @@
 }
 
 .hero {
-    height: 100vh;
+    height: 110vh;
     &::before{
         filter: brightness(75%);
         background-image: url(https://cdn.statically.io/img/i.pinimg.com/originals/40/ce/e2/40cee2ae407de99af49bea4ff771bcff.jpg);
@@ -39,7 +39,6 @@
   
 
 .hero-3 {
-    height: 150vh;
     &::before{
         background-image: url(https://wallpaperaccess.com/full/3239480.jpg);;
     }
@@ -67,12 +66,6 @@
             background-position: center center;
         }
     }
-    .hero-2 {
-        height: 90vh;
-    }
-}
-
-@media (min-width: 977px) {
     .hero-2 {
         height: 80vh;
     }
