@@ -9,10 +9,10 @@ const Services = () => {
     useRealTimeDatabase('services', (snapshot) => {
         const data = snapshot.val();
         setService(Object.keys(data).map(key => ({ key, item: data[key] })));
-    })
+    }, [])
 
     return (
-        <div>
+        <section>
             <h3 className="title-1">Servicios</h3>
             <div className="divisor"></div>
             <div className="margin"></div>
@@ -25,7 +25,7 @@ const Services = () => {
                 ))}
             </div>
             <div className="margin"></div>
-        </div>
+        </section>
     );
 }
 

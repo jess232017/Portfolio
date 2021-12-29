@@ -13,7 +13,7 @@ const Hero = () => {
             loop: true,
             typeSpeed: 80,
             backSpeed: 30,
-            backDelay: 1100
+            backDelay: 1500
         });
 
         // Destroying
@@ -23,12 +23,21 @@ const Hero = () => {
     }, []);
 
     return (
-        <header id="inicio" className="hero">
+        <header id="inicio" className="hero" data-spy="true">
             <div className="content">
                 <h1>Jesús Hernández</h1>
                 <div className="flex">
                     <p ref={el} id="dev-text" className="subtitulo" />
                 </div>
+                <span className="scroll-btn">
+                    <a href="#">
+                        <span className="mouse">
+                            <span>
+                            </span>
+                        </span>
+                    </a>
+                    <p>scroll down</p>
+                </span>
             </div>
         </header>
 

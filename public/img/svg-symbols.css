@@ -3,6 +3,11 @@
   height: 100px;
 }
 
+.developer-activity {
+  width: 850px;
+  height: 740px;
+}
+
 .icon-calendar {
   width: 32px;
   height: 32px;
@@ -19,6 +24,11 @@
 }
 
 .icon-design {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-dev {
   width: 32px;
   height: 32px;
 }
@@ -113,14 +123,38 @@
   height: 48px;
 }
 
+.logo-mui {
+  width: 256px;
+  height: 204px;
+}
+
 .logo-mysql {
   width: 48px;
   height: 48px;
 }
 
+.logo-net {
+  width: 64px;
+  height: 64px;
+}
+.cls-1{fill:#5c2d91;}
+.cls-2,.cls-3{fill:#fff;}
+.cls-2{opacity:0.1;}
+.cls-4{fill:#f2f2f2;}
+
+.logo-npm {
+  width: 540px;
+  height: 210px;
+}
+
 .logo-php {
   width: 256px;
   height: 135px;
+}
+
+.logo-react {
+  width: 256px;
+  height: 230px;
 }
 
 .logo-sass {

@@ -18,7 +18,7 @@
 }
 
 .hero {
-    height: 110vh;
+    height: 100vh;
     &::before{
         filter: brightness(75%);
         background-image: url(https://cdn.statically.io/img/i.pinimg.com/originals/40/ce/e2/40cee2ae407de99af49bea4ff771bcff.jpg);
@@ -27,7 +27,7 @@
 }
 
 .hero-2 {
-    height: 123vh;
+    height: 130vh;
     &::before {
         background-attachment: fixed;
         background-image: url(../img/1947484.jpg);
@@ -53,9 +53,9 @@
     }
 }
 
-@media (min-width: 507px) {
+@media (min-width: 528px) {
     .hero-2 {
-        height: 80vh;
+        height: 85vh;
     }
 }
 

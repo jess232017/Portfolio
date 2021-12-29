@@ -2,10 +2,15 @@
 $linkedin-color: #0a66c2;
 $whatsapp-color: #128c7e;
 $github-color: #333333;
+$email-color: #EA4335;
+$phone-color: #004ecb;
+
 
 .wrapper {
-    display: inline-flex;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
     .icon {
         position: relative;
         background-color: #ffffff;
@@ -22,6 +27,7 @@ $github-color: #333333;
         cursor: pointer;
         transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         border: 3px solid var(--color-scrolled);
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     }
 
     .tooltip {
@@ -89,5 +95,29 @@ $github-color: #333333;
 .wrapper .whatsapp:hover .tooltip::before {
     border-color: $whatsapp-color;
     background-color: $whatsapp-color;
+    color: #ffffff;
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+    border-color: $whatsapp-color;
+    background-color: $whatsapp-color;
+    color: #ffffff;
+}
+
+.wrapper .email:hover,
+.wrapper .email:hover .tooltip,
+.wrapper .email:hover .tooltip::before {
+    border-color: $email-color;
+    background-color: $email-color;
+    color: #ffffff;
+}
+
+.wrapper .phone:hover,
+.wrapper .phone:hover .tooltip,
+.wrapper .phone:hover .tooltip::before {
+    border-color: $phone-color;
+    background-color: $phone-color;
     color: #ffffff;
 }

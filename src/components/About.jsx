@@ -1,29 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
-//lex justy-center align-items
-const Button = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    svg{
-        width: 24px;
-        height: 24px;
-        fill: #4e4e4e;
-    }
-`;
+
+import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 const About = () => {
     return (
-        <section id="about-me">
+        <section id="about-me" data-spy="true">
             <div className='contenedor'>
                 <h3 className="title-1">Sobre Mí</h3>
                 <div className="divisor"></div>
-                <div className="about-inner">
+                <div className="about-inner ">
                     <div className="profile">
                         <img className="profile-photo" src="img/Jesus Hernandez.png" alt="Jesus Hernández" />
                         <div>
-                            <p><b>Perfil:</b> Desarrollador de Software</p>
-                            <p><b>Idiomas:</b> Español (Nativo), Ingles (Basico)</p>
+                            <p className="font-medium"><b>Perfil:</b> Desarrollador de Software</p>
+                            <p><b>Idiomas:</b> Español (Nativo), Inglés (Basico)</p>
                         </div>
                     </div>
                     <div className='text'>
@@ -33,12 +23,13 @@ const About = () => {
                         <p>
                             Actualmente me encuentro estudiando el quinto año de Ingeniería en Computación, con conocimiento en inglés, desarrollador de aplicaciones móviles, de escritorio y web. Me considero una persona responsable, con iniciativa, puntualidad, compromiso y de rápido aprendizaje.
                         </p>
-                        <Button href="docs/CV - Jesús Hernández.docx" className="btn btn-primary " >
-                            <svg>
-                                <use xlinkHref="./img/svg-symbols.svg#icon-download" />
-                            </svg>
-                            <span> Descargar CV</span>
-                        </Button>
+
+                        <a href="docs/CV - Jesús Hernández.docx" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <HiOutlineDocumentDownload
+                                className='mr-2 -ml-1 w-5 h-5'
+                            />
+                            Descargar CV
+                        </a>
                     </div>
                 </div>
             </div>

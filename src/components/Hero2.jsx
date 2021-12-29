@@ -19,25 +19,25 @@ const Hero2 = () => {
                         <svg className="able-icons">
                             <use xlinkHref="./img/svg-symbols.svg#icon-check" />
                         </svg>
-                        <span>Proactivo</span>
+                        <span className='text-white'>Proactivo</span>
                     </SoftSkill>
                     <SoftSkill>
                         <svg className="able-icons">
                             <use xlinkHref="./img/svg-symbols.svg#icon-calendar" />
                         </svg>
-                        <span>Responsable</span>
+                        <span className='text-white'>Responsable</span>
                     </SoftSkill>
                     <SoftSkill>
                         <svg className="able-icons">
                             <use xlinkHref="./img/svg-symbols.svg#icon-group" />
                         </svg>
-                        <span>Trabajo en equipo</span>
+                        <span className='text-white'>Trabajo en equipo</span>
                     </SoftSkill>
                     <SoftSkill>
                         <svg className="able-icons">
                             <use xlinkHref="./img/svg-symbols.svg#icon-medal" />
                         </svg>
-                        <span>Orientado a Objetivos</span>
+                        <span className='text-white'>Orientado a Objetivos</span>
                     </SoftSkill>
                 </div>
             </div>
