@@ -10,7 +10,7 @@ const About = () => {
                 <div className="divisor"></div>
                 <div className="about-inner ">
                     <div className="profile">
-                        <img className="profile-photo" src="img/Jesus Hernandez.png" alt="Jesus Hernández" />
+                        <img className="profile-photo" src="img/Jesus Hernandez.webp" alt="Jesus Hernández" />
                         <div>
                             <p className="font-medium"><b>Perfil:</b> Desarrollador de Software</p>
                             <p><b>Idiomas:</b> Español (Nativo), Inglés (Basico)</p>
@@ -30,6 +30,8 @@ const About = () => {
                             />
                             Descargar CV
                         </a>
+
+
                     </div>
                 </div>
             </div>

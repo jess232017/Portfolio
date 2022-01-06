@@ -21,8 +21,7 @@
     height: 100vh;
     &::before{
         filter: brightness(75%);
-        background-image: url(https://cdn.statically.io/img/i.pinimg.com/originals/40/ce/e2/40cee2ae407de99af49bea4ff771bcff.jpg);
-        background-image: url(../img/3233453.jpg);
+        background-image: url(../img/3233453.webp);
     }
 }
 
@@ -30,7 +29,7 @@
     height: 130vh;
     &::before {
         background-attachment: fixed;
-        background-image: url(../img/1947484.jpg);
+        background-image: url(../img/1947484.webp);
         background-repeat: no-repeat;
         background-size: cover;
         filter: brightness(75%);
@@ -40,7 +39,7 @@
 
 .hero-3 {
     &::before{
-        background-image: url(https://wallpaperaccess.com/full/3239480.jpg);;
+        background-image: url(../img/3239480.webp);;
     }
 }
 
