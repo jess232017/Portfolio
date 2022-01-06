@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section id="about-me" data-spy="true">
             <div className='contenedor'>
-                <h3 className="title-1">Sobre Mí</h3>
+                <h2 className="title-1">Sobre Mí</h2>
                 <div className="divisor"></div>
                 <div className="about-inner ">
                     <div className="profile">

@@ -15,7 +15,6 @@ const Header = () => {
                 sections = document.querySelectorAll('[data-spy="true"]');
             }
 
-
             //sticky effect
             const scrolled = document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20;
             actions.set(scrolled)
