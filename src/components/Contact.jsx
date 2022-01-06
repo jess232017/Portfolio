@@ -21,35 +21,35 @@ const schema = Yup.object().shape({
 
 const SocialMedia = () => (
     <div className="wrapper">
-        <a href="https://www.linkedin.com/in/jes%C3%BAs-enmanuel-hern%C3%A1ndez-gonz%C3%A1lez-b02788196/" target="_blank">
+        <a href="https://www.linkedin.com/in/jes%C3%BAs-enmanuel-hern%C3%A1ndez-gonz%C3%A1lez-b02788196/" target="_blank" rel="noopener noreferrer">
             <div className="icon linkedin">
                 <div className="tooltip">Linkedin</div>
                 <FaLinkedin />
             </div>
         </a>
 
-        <a href="https://github.com/jess232017" target="_blank">
+        <a href="https://github.com/jess232017" target="_blank" rel="noopener noreferrer">
             <div className="icon github">
                 <div className="tooltip">Github</div>
                 <FaGithub />
             </div>
         </a>
 
-        <a href="https://wa.me/+50586793204" target="_blank">
+        <a href="https://wa.me/+50586793204" target="_blank" rel="noopener noreferrer">
             <div className="icon whatsapp">
                 <div className="tooltip">Whatsapp</div>
                 <FaWhatsapp />
             </div>
         </a>
 
-        <a href="tel:86793204" target="_blank">
+        <a href="tel:86793204" target="_blank" rel="noopener noreferrer">
             <div className="icon phone">
                 <div className="tooltip">Teléfono</div>
                 <FaPhone />
             </div>
         </a>
 
-        <a href="mailto:jess232016@gmail.com" target="_blank">
+        <a href="mailto:jess232016@gmail.com" target="_blank" rel="noopener noreferrer">
             <div className="icon email">
                 <div className="tooltip">Correo</div>
                 <FaRegEnvelope />
