@@ -1,15 +1,8 @@
 import React, { Suspense } from 'react';
 
-/*import About from './components/About';
-import Contact from './components/Contact';
-import Hero2 from './components/Hero2';
-import Portfolio from './components/Portfolio';
-import Services from './components/Services';
-import Skills from './components/Skills';*/
-
-
 import Hero from './components/Hero';
 import Header from './components/layout/Header';
+import Loader from './components/layout/Loader';
 
 const About = React.lazy(() => import('./components/About'));
 const Contact = React.lazy(() => import('./components/Contact'));
@@ -26,23 +19,22 @@ const App = () => {
     <div className="App">
       <Header />
       <Hero />
-
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Loader />}>
         <About />
       </Suspense>
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Loader />}>
         <Skills />
       </Suspense>
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Loader />}>
         <Hero2 />
       </Suspense>
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Loader />}>
         <Portfolio />
       </Suspense>
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Loader />}>
         <Contact />
       </Suspense>
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Loader />}>
         <Footer />
       </Suspense>
     </div>
