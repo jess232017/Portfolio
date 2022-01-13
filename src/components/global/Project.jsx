@@ -41,7 +41,7 @@ const Project = ({ titulo, descripcion, hecho_con, imagen, url_github, url_web }
                 <FigCaption>
                     <h3>hecho con</h3>
                     <a className="flex" href={url_github} target="_blank" rel="noopener noreferrer">
-                        {hecho_con.map(element => (
+                        {hecho_con?.map(element => (
                             <Svg key={element}>
                                 <use xlinkHref={`./img/svg-symbols.svg#logo-${element}`} />
                             </Svg>

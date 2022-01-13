@@ -7,7 +7,7 @@ const Loader = () => {
                 <div className="double-bounce1" />
                 <div className="double-bounce2" />
             </div>
-            <p class="text-base dark:text-white text-center">Cargando recursos...</p>
+            <p className="text-base dark:text-white text-center">Cargando recursos...</p>
         </>
     );
 }
