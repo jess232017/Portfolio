@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+//controls
+import { Flipper, Flipped } from "react-flip-toolkit";
+
 //icons
 import { FaMobile, FaDesktop, FaServer, FaEye } from 'react-icons/fa'
 

@@ -36,7 +36,7 @@ const Hero = () => {
                             </span>
                         </span>
                     </a>
-                    <p>Bajar</p>
+                    <p>Desplazarse hacia abajo</p>
                 </span>
             </div>
         </header>
