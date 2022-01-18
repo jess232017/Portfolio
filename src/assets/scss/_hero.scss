@@ -1,4 +1,4 @@
-
+$cloudinary-url: 'https://res.cloudinary.com/js-media/image/upload/f_auto/q_auto/v1642524508/portfolio/hero';
 
 //Hero
 .hero,
@@ -21,7 +21,8 @@
     height: 100vh;
     &::before{
         filter: brightness(75%);
-        background-image: url(../img/3233453.webp);
+        //background-image: url(../img/3233453.webp);
+        background-image: url($cloudinary-url + '/3233453_brzqcm.webp');
     }
 }
 
@@ -29,7 +30,8 @@
     height: 130vh;
     &::before {
         background-attachment: fixed;
-        background-image: url(../img/1947484.webp);
+        //background-image: url(../img/1947484.webp);
+        background-image: url($cloudinary-url + '/1947484_ehwya0.webp');
         background-repeat: no-repeat;
         background-size: cover;
         filter: brightness(75%);
@@ -39,7 +41,8 @@
 
 .hero-3 {
     &::before{
-        background-image: url(../img/3239480.webp);;
+        //background-image: url(../img/3239480.webp);;
+        background-image: url($cloudinary-url + '/3239480_nnfqfm.webp');
     }
 }
 

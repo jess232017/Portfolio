@@ -11,7 +11,7 @@ const About = () => {
                 <div className="divisor"></div>
                 <div className="about-inner ">
                     <div className="profile">
-                        <img className="profile-photo" src="img/Jesus Hernandez.webp" alt="Jesus Hernández" />
+                        <img className="profile-photo" src="https://res.cloudinary.com/js-media/image/upload/v1642526363/portfolio/carnet/Picture1_ch2yeq.jpg" alt="Jesus Hernández" />
                         <div>
                             <p className="font-medium"><b>Perfil:</b> Desarrollador de Software</p>
                             <p><b>Idiomas:</b> Español (Nativo), Inglés (Basico)</p>
@@ -25,7 +25,7 @@ const About = () => {
                             Actualmente me encuentro estudiando el quinto año de Ingeniería en computación. Me considero una persona responsable, con iniciativa, puntualidad, compromiso y de rápido aprendizaje.
                         </p>
 
-                        <a href="docs/CV - Jesús Hernández.docx" className="text-center inline-flex items-center mr-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <a href="https://drive.google.com/file/d/1POOdjWnjzEVBdiVbDgR_d_Bi7ODAUhJ8/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-center inline-flex items-center mr-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <HiOutlineDocumentDownload
                                 className='mr-2 -ml-1 w-5 h-5'
                             />
